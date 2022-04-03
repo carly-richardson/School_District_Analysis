@@ -1,1 +1,34 @@
 # School_District_Analysis
+Analyzing data on student funding and students' standardized test scores to provide insights on performance trends and patterns.
+
+## Overview of the School District Analysis
+1. A high-level snapshot of the district's key metrics, presented in a table format
+2. An overview of the key metrics for each school, presented in a table format
+3. Tables presenting each of the following metrics:
+    - Top 5 and bottom 5 performing schools, based on the overall passing rate
+    - The average math score received by students in each grade level at each school
+    - The average reading score received by students in each grade level at each school
+    - School performance based on the budget per student
+    - School performance based on the school size 
+    - School performance based on the type of school
+
+## Resources
+- Data Source: clean_students_complete.csv
+- Software: Python 3.9.10, Jupyter Notebook 6.4.5
+
+## School Distrtict Analysis Results
+This is how the following metrics were affected by replacing the ninth-grade scores at Thomas High School:
+
+- The district summary was not significantly impacted.
+        insert picture
+- The school summary only changed for Thomas High School.
+        insert picture
+- Replacing the ninth graders' math and reading scores made Thomas High School's overall passing percentage go from 65.076453 to 90.630324. Thomas High School had the second highest overall passing percentage once the grades were replaced.
+
+- Math and reading scores by grade remained the same for all schools except Thomas High School. The average scores were based on each school's average math and reading scores, so they were not impacted by changing the scores at Thomas High School. The average math and reading scores for 9th grade at Thomas High School are now "NaN".
+- Scores by school spending remained the same. 
+- Scores by school size remained the same.
+- Scores by school type remained the same.
+
+## Summary
+Removing the Thomas High School ninth graders' math and reading scores did not significantly impact the school district analysis. All the other schools' results remained the same, because they were based on their own students' performances. The total number of students and total budget remained the same. The student count was only changed to determine the district math and reading scores, because we were no longer using those students' test scores. That still did not significantly impact the analysis, because we only removed 461 out of 39,170 students.
